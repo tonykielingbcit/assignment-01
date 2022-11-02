@@ -8,6 +8,7 @@
 // Set strict mode
 "use strict";
 const http = require("http");
+
 //extracomment
 // * Load the core HTTP module so that we can create a server
 
@@ -42,7 +43,8 @@ const server = http.createServer((req, res) => {
       break;
 
     //   Individual Profile
-    case "/profiles/tony":
+    case "/profiles/josh":
+      console.log("Josh is here.  Loading profile...");
       loadProfile(req, res);
       break;
 
