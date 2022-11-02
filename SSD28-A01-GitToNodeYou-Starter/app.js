@@ -7,6 +7,8 @@
 
 // Set strict mode
 "use strict";
+const http = require("http");
+
 
 //extracomment
 // * Load the core HTTP module so that we can create a server
@@ -29,8 +31,8 @@ const server = http.createServer((req, res) => {
     // * Add a case that responds to /profiles which sends "Profiles List" with a 200
 
     //   Individual Profile
-    case "/profiles/josh":
-      console.log("Josh is here.  Loading profile...");
+    case "/profiles/byul":
+      console.log("Byul is here.  Loading profile...");
       loadProfile(req, res);
       break;
 
