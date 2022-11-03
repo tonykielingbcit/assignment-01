@@ -43,7 +43,22 @@ const server = http.createServer((req, res) => {
       break;
 
     //   Individual Profile
+    case "/profiles/byul":
+      console.log("Ginni is here.  Loading profile...");
+      loadProfile(req, res);
+      break;
+
     case "/profiles/ginni":
+      console.log("Ginni is here.  Loading profile...");
+      loadProfile(req, res);
+      break;
+
+    case "/profiles/stephanie":
+      console.log("Stephanie is here.  Loading profile...");
+      loadProfile(req, res);
+      break;
+
+    case "/profiles/tony":
       console.log("Ginni is here.  Loading profile...");
       loadProfile(req, res);
       break;
