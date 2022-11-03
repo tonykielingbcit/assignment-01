@@ -30,21 +30,21 @@ const server = http.createServer((req, res) => {
     // * Add a case that responds to / which sends "Hello Node Server" with a 200
     case "/":
       res.statusCode = 200;
-      res.setHeader("Content-Type", "text/plain");
-      res.end("Hello Node Server");
+      res.setHeader("Content-Type", "text/html");
+      res.end("<h1 style='color: green; text-align: center; margin-top: 3rem; border: 2px solid orange; padding: 2rem 0'>Hello Node Server</h1>");
       break;
 
     // Profiles Listing Page
     // * Add a case that responds to /profiles which sends "Profiles List" with a 200
     case "/profiles":
       res.statusCode = 200;
-      res.setHeader("Content-Type", "text/plain");
-      res.end("Profiles List");
+      res.setHeader("Content-Type", "text/html");
+      res.end("<h1 style='color: blue; text-align: center; margin-top: 3rem'>Profiles List</h1>");
       break;
 
     //   Individual Profile
     case "/profiles/byul":
-      console.log("Ginni is here.  Loading profile...");
+      console.log("Byul is here.  Loading profile...");
       loadProfile(req, res);
       break;
 
@@ -59,7 +59,7 @@ const server = http.createServer((req, res) => {
       break;
 
     case "/profiles/tony":
-      console.log("Ginni is here.  Loading profile...");
+      console.log("Tony is here.  Loading profile...");
       loadProfile(req, res);
       break;
 
@@ -75,7 +75,7 @@ const server = http.createServer((req, res) => {
       } else {
           res.statusCode = 404;
           res.setHeader("Content-Type", "text/html");
-          res.end("<h1>File not found</h1>");
+          res.end("<h1 style='color: red; text-align: center; margin-top: 3rem'>Sorry, File not found..</h1>");
           break;
         // * set statusCode to 404
         // * use res.setHeader to specify "Content-Type", "text/html"

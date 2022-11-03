@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "nodemon": "^2.0.20"
+  },
+  "name": "ssd28-a01-gittonodeyou-starter",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
